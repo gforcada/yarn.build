@@ -17,7 +17,7 @@ def find_package_json(path):
         dir_path = join(path, filename)
         if filename == 'package.json':
             LOGGER.info('yarn: package.json found!')
-            build(dir_path)
+            build(path)
         elif os.path.isdir(dir_path):
             find_package_json(dir_path)
 
