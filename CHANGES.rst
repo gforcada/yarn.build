@@ -3,9 +3,7 @@ Changelog
 
 1.0a2 (unreleased)
 ------------------
-
-- Nothing changed yet.
-
+- Be more verbose.
 
 1.0a1 (2017-01-05)
 ------------------
