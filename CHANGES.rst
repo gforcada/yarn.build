@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0a4 (unreleased)
+1.0a4 (2017-01-06)
 ------------------
 - Typos are fun...
 
