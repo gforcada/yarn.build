@@ -3,9 +3,7 @@ Changelog
 
 1.0a3 (unreleased)
 ------------------
-
-- Nothing changed yet.
-
+- Ditch wheels by now, only source releases.
 
 1.0a2 (2017-01-06)
 ------------------
