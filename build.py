@@ -15,8 +15,8 @@ def find_package_json(path):
     """Find a ``packages.json`` file and run yarn on it"""
     for filename in os.listdir(path):
         dir_path = join(path, filename)
-        if filename == 'packages.json':
-            LOGGER.info('yarn: packages.json found!')
+        if filename == 'package.json':
+            LOGGER.info('yarn: package.json found!')
             build(dir_path)
         elif os.path.isdir(dir_path):
             find_package_json(dir_path)
