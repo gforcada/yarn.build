@@ -3,9 +3,7 @@ Changelog
 
 1.0a6 (unreleased)
 ------------------
-
-- Nothing changed yet.
-
+- Create universal wheels again.
 
 1.0a5 (2017-01-06)
 ------------------
