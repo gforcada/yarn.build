@@ -47,5 +47,5 @@ def build_project(data):
         )
         if data:
             # We were called as an entry point of zest.releaser.
-            if not ask('Error building project. Do you want to continue?'):
+            if not ask('Error building JS project. Do you want to continue?'):
                 sys.exit(1)
