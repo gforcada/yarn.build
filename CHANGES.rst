@@ -1,6 +1,12 @@
 Changelog
 =========
 
+1.0a6 (unreleased)
+------------------
+
+- Nothing changed yet.
+
+
 1.0a5 (2017-01-06)
 ------------------
 - Pass the parent folder where package.json is.
