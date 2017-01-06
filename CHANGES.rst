@@ -3,9 +3,7 @@ Changelog
 
 1.0a5 (unreleased)
 ------------------
-
-- Nothing changed yet.
-
+- Pass the parent folder where package.json is.
 
 1.0a4 (2017-01-06)
 ------------------
