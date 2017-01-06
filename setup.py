@@ -2,7 +2,7 @@
 from setuptools import setup
 
 
-version = '1.0a6.dev0'
+version = '1.0a6'
 long_description = '{0}\n{1}'.format(
     open('README.rst').read(),
     open('CHANGES.rst').read(),
