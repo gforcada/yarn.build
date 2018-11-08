@@ -35,15 +35,15 @@ def build_project(data):
     """Build a JavaScript project from a zest.releaser tag directory"""
     tagdir = data.get('tagdir')
     if not tagdir:
-        msg = 'yarn: Aborted building with yarn: no tagdir found in data.'
+        msg = 'yarn: no tagdir found in data.'
         LOGGER.warn(msg)
         return
-    LOGGER.debug('yarn: Find and build JavaScript projects {0}'.format(tagdir))
+    LOGGER.debug('yarn: Find and build JavaScript projects on {0}'.format(tagdir))
     try:
         find_package_json(tagdir)
     except Exception:
         LOGGER.warn(
-            'yarn: Building with a project with yarn failed.',
+            'yarn: Building the project failed.',
             exc_info=True,
         )
         if data:
