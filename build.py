@@ -18,6 +18,7 @@ def find_package_json(path):
         if filename == 'package.json':
             LOGGER.info('yarn: package.json found!')
             build(path)
+            break
         elif os.path.isdir(dir_path):
             find_package_json(dir_path)
 
