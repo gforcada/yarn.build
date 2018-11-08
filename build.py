@@ -25,7 +25,7 @@ def find_package_json(path):
 def build(path):
     """Build the JavaScript project at the given location"""
     LOGGER.debug('yarn: Compile dependencies')
-    subprocess.call(['yarn', ], cwd=path)
+    subprocess.call(['yarn', '--frozen-lockfile', ], cwd=path)
     LOGGER.debug('yarn: Build the project')
     subprocess.call(['yarn', 'run', 'release', ], cwd=path)
 
