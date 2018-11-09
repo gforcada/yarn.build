@@ -27,11 +27,13 @@ def get_configured_location(path):
             if os.path.exists(folder_path):
                 return folder_path
             logger.warning('{0} does not exist'.format(folder_path))
-        except (NoSectionError, NoOptionError, ValueError):
+        except NoSectionError:
+            pass
+        except (NoOptionError, ValueError):
             LOGGER.warning(
-                'No yarn.build section or no folder option found in setup.cfg'
+                'No valid `folder` option found in `yarn.build` section '
+                'within setup.cfg'
             )
-            return None
 
     return None
 

@@ -6,6 +6,8 @@ Changelog
 
 - Fix logic, to not try to build a project if no package.json could be found.
 
+- Be more quiet if no ``yarn.build`` section is found on ``setup.cfg``.
+
 1.0b2 (2018-11-09)
 ------------------
 
