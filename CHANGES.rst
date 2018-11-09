@@ -1,11 +1,14 @@
 Changelog
 =========
 
-1.0a7 (unreleased)
+1.0b1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Allow to configure where package.json is located via a setup.cfg section:
 
+::
+    [yarn.build]
+    file = path-to/package.json
 
 1.0a6 (2017-01-06)
 ------------------
