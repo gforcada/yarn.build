@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0b1.post1 (unreleased)
-------------------------
+1.0b2 (2018-11-09)
+------------------
 
 - Change option to ``folder`` as package.json is expected to be there, i.e.
 
