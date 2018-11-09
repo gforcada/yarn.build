@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0b2.0 (unreleased)
---------------------
+1.0b1.post0 (2018-11-09)
+------------------------
 
 - Fix (hopefully), pypi rendering.
 
