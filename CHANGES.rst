@@ -4,8 +4,7 @@ Changelog
 1.0b2.0 (unreleased)
 --------------------
 
-- Nothing changed yet.
-
+- Fix (hopefully), pypi rendering.
 
 1.0b1 (2018-11-09)
 ------------------
