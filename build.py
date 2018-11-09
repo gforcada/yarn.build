@@ -23,13 +23,13 @@ def get_configured_location(path):
         config = ConfigParser()
         config.read(setup_cfg)
         try:
-            file_path = config.get('yarn.build', 'file')
-            if os.path.exists(file_path):
-                return file_path
-            logger.warning('{0} does not exist'.format(file_path))
+            folder_path = config.get('yarn.build', 'folder')
+            if os.path.exists(folder_path):
+                return folder_path
+            logger.warning('{0} does not exist'.format(folder_path))
         except (NoSectionError, NoOptionError, ValueError):
             LOGGER.warning(
-                'No yarn.build section or no file option found in setup.cfg'
+                'No yarn.build section or no folder option found in setup.cfg'
             )
             return None
 

@@ -4,8 +4,12 @@ Changelog
 1.0b1.post1 (unreleased)
 ------------------------
 
-- Nothing changed yet.
+- Change option to ``folder`` as package.json is expected to be there, i.e.
 
+::
+
+    [yarn.build]
+    folder = path/to/folder/
 
 1.0b1.post0 (2018-11-09)
 ------------------------
