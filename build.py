@@ -73,8 +73,9 @@ def build_project(data):
         return
     LOGGER.debug('yarn: Find and build JavaScript projects on {0}'.format(tagdir))
     try:
-        location = get_configured_location(tagdir)
-        build(location)
+        location = find_package_json(tagdir)
+        if location:
+            build(location)
     except Exception:
         LOGGER.warn(
             'yarn: Building the project failed.',

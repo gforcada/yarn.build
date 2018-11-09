@@ -4,8 +4,7 @@ Changelog
 1.0b3.0 (unreleased)
 --------------------
 
-- Nothing changed yet.
-
+- Fix logic, to not try to build a project if no package.json could be found.
 
 1.0b2 (2018-11-09)
 ------------------
