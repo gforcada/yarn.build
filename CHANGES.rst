@@ -13,6 +13,7 @@ Changelog
 - Allow to configure where package.json is located via a setup.cfg section:
 
 ::
+
     [yarn.build]
     file = path-to/package.json
 
