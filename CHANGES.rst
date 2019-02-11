@@ -4,8 +4,7 @@ Changelog
 1.0 (unreleased)
 ----------------
 
-- Nothing changed yet.
-
+- No changes since last release.
 
 1.0b3 (2018-11-09)
 ------------------
