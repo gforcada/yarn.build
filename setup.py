@@ -1,9 +1,8 @@
-# -*- coding: utf-8 -*-
-from setuptools import setup
 from pathlib import Path
 
+from setuptools import setup
 
-version = '1.0.1.dev0'
+version = "1.0.1.dev0"
 long_description = f"""
 {Path('README.md').read_text()}
 
@@ -11,37 +10,38 @@ long_description = f"""
 """
 
 setup(
-    name='yarn.build',
+    name="yarn.build",
     version=version,
-    description='Build JS artifacts with yarn',
+    description="Build JS artifacts with yarn",
     long_description=long_description,
     long_description_content_type="text/markdown",
     classifiers=[
-        'Development Status :: 5 - Production/Stable',
-        'Environment :: Plugins',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)',  # noqa
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.11',
-        'Topic :: Software Development :: Build Tools',
+        "Development Status :: 5 - Production/Stable",
+        "Environment :: Plugins",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",  # noqa
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.11",
+        "Topic :: Software Development :: Build Tools",
     ],
-    keywords='yarn javascript compile build release zest.releaser',
-    author='Gil Forcada Codinachs',
-    author_email='gil.gnome@gmail.com',
-    url='https://github.com/gforcada/yarn.build',
-    license='GPL version 3',
-    py_modules=['yarn_build', ],
+    keywords="yarn javascript compile build release zest.releaser",
+    author="Gil Forcada Codinachs",
+    author_email="gil.gnome@gmail.com",
+    url="https://github.com/gforcada/yarn.build",
+    license="GPL version 3",
+    py_modules=[
+        "yarn_build",
+    ],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'setuptools',
-        'zest.releaser',
-        'six',
+        "setuptools",
+        "zest.releaser",
     ],
     entry_points={
-        'zest.releaser.releaser.after_checkout': [
-            'yarn_build = yarn_build:build_project',
+        "zest.releaser.releaser.after_checkout": [
+            "yarn_build = yarn_build:build_project",
         ],
     },
 )
