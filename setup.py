@@ -1,18 +1,21 @@
 # -*- coding: utf-8 -*-
 from setuptools import setup
+from pathlib import Path
 
 
 version = '1.0.1.dev0'
-long_description = '{0}\n{1}'.format(
-    open('README.rst').read(),
-    open('CHANGES.rst').read(),
-)
+long_description = f"""
+{Path('README.md').read_text()}
+
+{Path('CHANGES.md').read_text()}
+"""
 
 setup(
     name='yarn.build',
     version=version,
     description='Build JS artifacts with yarn',
     long_description=long_description,
+    long_description_content_type="text/markdown",
     classifiers=[
         'Development Status :: 3 - Alpha',
         'Environment :: Plugins',
