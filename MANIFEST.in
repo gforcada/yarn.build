@@ -1,2 +1,2 @@
-include *.rst *.py
-exclude *.pyc
+include *.md *.py
+exclude *.pyc *.yaml *.ini
