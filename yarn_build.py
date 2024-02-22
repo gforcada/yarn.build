@@ -8,7 +8,7 @@ from os.path import join
 
 from zest.releaser.utils import ask
 
-LOGGER = logging.getLogger("yarn.build")
+logger = logging.getLogger("yarn.build")
 
 
 def get_configured_location(path):
@@ -24,7 +24,7 @@ def get_configured_location(path):
         except NoSectionError:
             pass
         except (NoOptionError, ValueError):
-            LOGGER.warning(
+            logger.warning(
                 "No valid `folder` option found in `yarn.build` section "
                 "within setup.cfg"
             )
@@ -44,7 +44,7 @@ def recursive_find_package_json(path):
     for filename in os.listdir(path):
         dir_path = join(path, filename)
         if filename == "package.json":
-            LOGGER.info("yarn: package.json found!")
+            logger.info("yarn: package.json found!")
             return path
         elif os.path.isdir(dir_path):
             recursive_find_package_json(dir_path)
@@ -54,7 +54,7 @@ def recursive_find_package_json(path):
 
 def build(path):
     """Build the JavaScript project at the given location"""
-    LOGGER.debug("yarn: Compile dependencies")
+    logger.debug("yarn: Compile dependencies")
     subprocess.call(
         [
             "yarn",
@@ -62,7 +62,7 @@ def build(path):
         ],
         cwd=path,
     )
-    LOGGER.debug("yarn: Build the project")
+    logger.debug("yarn: Build the project")
     subprocess.call(
         [
             "yarn",
@@ -78,15 +78,15 @@ def build_project(data):
     tagdir = data.get("tagdir")
     if not tagdir:
         msg = "yarn: no tagdir found in data."
-        LOGGER.warn(msg)
+        logger.warn(msg)
         return
-    LOGGER.debug(f"yarn: Find and build JavaScript projects on {tagdir}")
+    logger.debug(f"yarn: Find and build JavaScript projects on {tagdir}")
     try:
         location = find_package_json(tagdir)
         if location:
             build(location)
     except Exception:
-        LOGGER.warn(
+        logger.warn(
             "yarn: Building the project failed.",
             exc_info=True,
         )
