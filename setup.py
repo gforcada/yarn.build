@@ -2,7 +2,7 @@ from pathlib import Path
 
 from setuptools import setup
 
-version = "1.0.1.dev0"
+version = "2.0.0a1"
 long_description = f"""
 {Path('README.md').read_text()}
 

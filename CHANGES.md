@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1 (unreleased)
+## 2.0.0a1 (2024-02-22)
 
 - Add linting with `pre-commit` / `tox` / GitHub Actions
 
