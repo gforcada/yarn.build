@@ -1,14 +1,12 @@
 """zest.releaser plugin to build JavaScript projects"""
-from configparser import ConfigParser
-from configparser import NoSectionError
-from configparser import NoOptionError
-from zest.releaser.utils import ask
-from os.path import join
 import logging
 import os
 import subprocess
 import sys
+from configparser import ConfigParser, NoOptionError, NoSectionError
+from os.path import join
 
+from zest.releaser.utils import ask
 
 LOGGER = logging.getLogger('yarn.build')
 
