@@ -25,6 +25,7 @@ setup(
         "Programming Language :: Python :: 3.11",
         "Topic :: Software Development :: Build Tools",
     ],
+    python_requires=">=3.11",
     keywords="yarn javascript compile build release zest.releaser",
     author="Gil Forcada Codinachs",
     author_email="gil.gnome@gmail.com",
