@@ -85,7 +85,7 @@ def build_project(data):
         location = find_package_json(tagdir)
         if location:
             build(location)
-    except Exception:
+    except Exception:  # noqa: B902
         logger.warn(
             "yarn: Building the project failed.",
             exc_info=True,
