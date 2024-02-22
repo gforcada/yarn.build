@@ -31,7 +31,7 @@ setup(
     author_email='gil.gnome@gmail.com',
     url='https://github.com/gforcada/yarn.build',
     license='GPL version 3',
-    py_modules=['build', ],
+    py_modules=['yarn_build', ],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
@@ -41,7 +41,7 @@ setup(
     ],
     entry_points={
         'zest.releaser.releaser.after_checkout': [
-            'yarn_build = build:build_project',
+            'yarn_build = yarn_build:build_project',
         ],
     },
 )
