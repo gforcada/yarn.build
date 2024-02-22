@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 """zest.releaser plugin to build JavaScript projects"""
-from six.moves.configparser import ConfigParser
-from six.moves.configparser import NoSectionError
-from six.moves.configparser import NoOptionError
+from configparser import ConfigParser
+from configparser import NoSectionError
+from configparser import NoOptionError
 from zest.releaser.utils import ask
 from os.path import join
 import logging
@@ -26,7 +25,7 @@ def get_configured_location(path):
             folder_path = config.get('yarn.build', 'folder')
             if os.path.exists(folder_path):
                 return folder_path
-            logger.warning('{0} does not exist'.format(folder_path))
+            logger.warning(f'{folder_path} does not exist')
         except NoSectionError:
             pass
         except (NoOptionError, ValueError):
@@ -73,7 +72,7 @@ def build_project(data):
         msg = 'yarn: no tagdir found in data.'
         LOGGER.warn(msg)
         return
-    LOGGER.debug('yarn: Find and build JavaScript projects on {0}'.format(tagdir))
+    LOGGER.debug(f'yarn: Find and build JavaScript projects on {tagdir}')
     try:
         location = find_package_json(tagdir)
         if location:
