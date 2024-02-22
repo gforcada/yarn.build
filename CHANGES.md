@@ -2,7 +2,11 @@
 
 ## 1.0.1 (unreleased)
 
-- Nothing changed yet
+- Add linting with `pre-commit` / `tox` / GitHub Actions
+
+- Rename the main module to something else than `build` as it clashes with the distribution https://pypi.org/project/build/
+
+- Update the syntax to python 3.11 and use `pathlib`
 
 ## 1.0.0 (2019-02-11)
 
