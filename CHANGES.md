@@ -2,9 +2,7 @@
 
 ## 2.0.0a2 (unreleased)
 
-
-- Nothing changed yet.
-
+- Nothing changed since the alpha release.
 
 ## 2.0.0a1 (2024-02-22)
 
