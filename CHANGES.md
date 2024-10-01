@@ -1,10 +1,13 @@
 # Changelog
 
-## 2.0.1 (unreleased)
+## 3.0.0 (unreleased)
 
+### Breaking changes
 
-- Nothing changed yet.
-
+- configuration options are mandatory,
+  autodiscovery of `packages.json` has been removed
+- it is no longer tied to `yarn`, nor to `yarn build` to generate the assets,
+  you can use whichever tooling you want, please refer to the `README`
 
 ## 2.0.0 (2024-03-01)
 
